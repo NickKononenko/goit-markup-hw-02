@@ -207,6 +207,10 @@ color: var(--text-color-ocean);
 
 /* Portfolio page */
 
+.portfolio-header {
+  display: none;
+}
+
 /* Filter */
 
 .filter {
