@@ -33,7 +33,6 @@ body {
 
 .logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -46,9 +45,13 @@ body {
   color: var(--text-color-iris);
 }
 
+.list-item .link:hover,
+.list-item .link:focus {
+color: var(--text-color-ocean);
+}
+
 .navbar .link {
   color: var(--primary-text-color);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -65,7 +68,7 @@ body {
 
 .contacts .link:hover,
 .contacts .link:focus {
-  color: var(--text-color-iris);
+  color: var(--text-color-ocean);
 }
 
 /* Footer */
@@ -76,7 +79,6 @@ body {
 
 .site-footer .logo-web {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -86,7 +88,6 @@ body {
 
 .site-footer .logo {
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -110,7 +111,7 @@ body {
   /* Доданий для того, щоб було видно hero title */
 }
 .hero-title {
-  font-style: normal;
+  text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -120,7 +121,6 @@ body {
 .hero-button {
   color: var(--text-color-white);
   background-color: var(--text-color-iris);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -130,19 +130,21 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--text-color-iris);
-  background-color: var(--text-color-white);
+  background-color: var(--text-color-ocean);
 }
 
 
 /* Our values */
+
+.our-values-section h2 {
+  display: none;
+}
 
 .our-values-section ul {
   list-style: none;
 }
 
 .our-values-section h3 {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -157,7 +159,7 @@ body {
 /* What are we doing */
 
 .our-job-section h2 {
-  font-style: normal;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -171,8 +173,12 @@ body {
 
 /* Our team */
 
+.our-team-section {
+  background-color: var(--text-color-cloud);
+}
+
 .our-team-section h2 {
-  font-style: normal;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -210,11 +216,12 @@ body {
 .filter .button {
   color: var(--text-color-iris);
   background-color: var(--text-color-cloud);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  font-family: inherit;
   line-height: 1.5;
   cursor: pointer;
+
 }
 
 .filter .button:hover,
@@ -229,8 +236,7 @@ body {
   list-style: none;
 }
 
-.porfolio-items h2 {
-  font-style: normal;
+.portfolio-items h2 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
